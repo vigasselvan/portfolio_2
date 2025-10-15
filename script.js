@@ -1,6 +1,6 @@
 function handleClick(){
     const mobile_Link = document.getElementById("mobile_Links");
-    const hamburger_menu = document.getElementsByClassName("hamburger_menu")
+    const hamburger_menu = document.getElementsByClassName("hamburger_menu");
 
     if(mobile_Link.style.display === "block"){
         mobile_Link.style.display = "none";
