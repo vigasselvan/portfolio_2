@@ -180,6 +180,94 @@ body{
 }
 
 
+/* Project section */
+
+.projects_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.proj_title{
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(135deg, rgb(226, 232, 240), rgb(14, 165, 233)) text;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+}
+.proj_disc{
+    font-size: 1.25rem;
+    color: rgb(148, 163, 184);
+    max-width: 48rem;
+    margin: 0px auto;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;  
+    width: 25vw;
+    height: 60vh;
+}
+
+.proj_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #1e293b80;
+    padding: 25px;
+    opacity: 1;
+    transform: translateY(0px);
+    border-radius: 15px;
+    flex: 0 0 auto;
+}
+
+.proj_main_card{
+    display: flex;
+    align-items: center;
+    flex: 1 1 0%;
+    line-height: 1.6;
+    color: #e2e8f0;
+    margin-bottom: 1rem;
+}
+
+.proj_card img{
+    width: 20vw;
+    height: 30vh;
+    border-radius: 15px 15px 0 0;
+}
+
+.card_content h1{
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 1rem 0 0.5rem;
+    color: rgb(226, 232, 240);
+}
+
+.card_content P{
+    margin-top: 0;
+    color: rgb(148, 163, 184);
+    font-size: 0.875rem;
+}
+
+.git_logo{
+    padding: 0 10px;
+}
+
+.tech_proj{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}    
+
 @media (max-width: 750px){
     .right_section{
         display: none;
