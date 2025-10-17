@@ -96,7 +96,7 @@ body{
     align-items: center;
     height: 100vh;
     width: 100vw;
-    padding: 0 6vw;
+    padding: 0 1.5rem;
 }
 
 .my_name{
@@ -183,6 +183,8 @@ body{
 /* Project section */
 
 .projects_section{
+    width: 100vw;
+    padding: 0 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -209,23 +211,32 @@ body{
 }
 
 .projects{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;  
-    width: 25vw;
-    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
 }
 
 .proj_card{
+    box-sizing: border-box;
+    width: 20vw;
+    min-width: 100px;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     background: #1e293b80;
-    padding: 25px;
-    opacity: 1;
+    padding: 1.5rem;
     transform: translateY(0px);
-    border-radius: 15px;
+    border-radius: 1rem;
     flex: 0 0 auto;
+    overflow: hidden;
+    border: 1px solid rgba(51, 65, 85, 0.5);
+}
+
+.proj_card:hover {
+  border-color: rgba(14, 165, 233, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 .proj_main_card{
@@ -234,17 +245,18 @@ body{
     flex: 1 1 0%;
     line-height: 1.6;
     color: #e2e8f0;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .proj_card img{
-    width: 20vw;
+    width: 100%;
+    object-fit: cover;
     height: 30vh;
-    border-radius: 15px 15px 0 0;
+    border-radius: 1rem 1rem 0 0;
 }
 
 .card_content h1{
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     font-weight: 700;
     margin: 1rem 0 0.5rem;
     color: rgb(226, 232, 240);
@@ -256,17 +268,41 @@ body{
     font-size: 0.875rem;
 }
 
+.git_link{
+    height: 100%;
+}
+
 .git_logo{
-    padding: 0 10px;
+    padding: 0 1.1rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 0.5rem 0.5rem;
+    color: rgb(226, 232, 240);
+}
+
+.git_logo:hover{
+    background-color: #1e293b;
 }
 
 .tech_proj{
     display: flex;
     gap: 1rem;
-    margin-bottom: 0.5rem;
     flex-wrap: wrap;
     align-content: space-evenly;
 }    
+
+@media (max-width: 1100px){
+    .proj_card{
+        width: 80vw;
+    }
+
+    .projects{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
 
 @media (max-width: 750px){
     .right_section{
