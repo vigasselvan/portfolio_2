@@ -373,6 +373,7 @@ body{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2vw;
+    margin-bottom: 1.5rem;
 }
 
 .skill_catogary_card{
@@ -421,7 +422,26 @@ body{
     height: 100%;
     background: linear-gradient(90deg, #0ea5e9, #06b6d4);
     border-radius: 1rem;
-    transition: width 1s ease-out;
+    transition: 1s ease-out;
+}
+
+.add_Badge{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    gap: 1rem;
+    width: 75vw;
+}
+
+.add_Badge .badge{
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+}
+
+.add_Badge .badge:hover{
+    background: #1e293b;
+    border-color: #0ea5e9;
 }
 
 @media (max-width: 900px){
