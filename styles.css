@@ -184,14 +184,14 @@ body{
 
 .projects_section{
     width: 100vw;
-    padding: 0 1.5rem;
+    padding: 4rem 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.proj_title{
+.section_title{
     -webkit-text-fill-color: transparent;
     background: linear-gradient(135deg, rgb(226, 232, 240), rgb(14, 165, 233)) text;
     font-size: 2.5rem;
@@ -200,7 +200,7 @@ body{
     line-height: 1.2;
     text-align: center;
 }
-.proj_disc{
+.section_disc{
     font-size: 1.25rem;
     color: rgb(148, 163, 184);
     max-width: 48rem;
@@ -357,3 +357,80 @@ body{
     }
 }
 
+
+/* Skills section */
+
+.skills_section{
+    width: 100vw;
+    padding: 4rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills_cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vw;
+}
+
+.skill_catogary_card{
+    background: #1e293b80;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(51, 65, 85, .5);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: all .3s ease;
+    width: 33vw;
+}
+
+.skill_catogary_heading{
+    margin: 0 0 0.5rem 0;
+}
+
+.skill_content{
+    display: flex;
+    flex-direction: column;   
+    margin-top: 10px;
+}
+
+.skill_card_top{
+    margin-bottom: 1.5rem;
+}
+
+.skill_info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill_info p{
+    margin: 8px 0;
+}
+
+.skill_radar{
+    width: 100%;
+    height: .5rem;
+    background: #1e293b;
+    border-radius: 9999px;
+    overflow: hidden;
+}
+
+.skill_level{
+    height: 100%;
+    background: linear-gradient(90deg, #0ea5e9, #06b6d4);
+    border-radius: 1rem;
+    transition: width 1s ease-out;
+}
+
+@media (max-width: 900px){
+    .skills_cards{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .skill_catogary_card{
+        width: 75vw;
+    }
+}
