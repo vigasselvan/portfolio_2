@@ -45,16 +45,19 @@ body{
     margin: 0;
 }
 
-.right_section li{
+.right_section a{
+    text-decoration: none;
+}
+
+.right_section a li{
     list-style-type: none;
     color: #94a3b8;
-    text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
     font-size: 18px;
 }
 
-.right_section li:hover {
+.right_section a li:hover {
     color: #0ea5e9;
 }
 
@@ -324,11 +327,12 @@ body{
 
     .hamburger_menu{
         display: block;
+        padding: 0.5rem 0.75rem;
     }
 
     #mobile_Links{
         position: relative;
-        top: 10vh;
+        top: 12vh;
         left: 0;
         right: 0; 
         background: rgba(15, 23, 42, 0.95);
@@ -345,7 +349,12 @@ body{
         gap: 1vh;
     }
 
-    #mobile_Links ul li:hover {
+     #mobile_Links ul a{
+        text-decoration: none;
+        color: #e2e8f0;
+     }
+
+    #mobile_Links ul a li:hover {
         color: #0ea5e9;
         cursor: pointer;
     }
@@ -489,9 +498,21 @@ body{
 }
 
 .exp_card p{
-    font-weight: 500;
-    font-size: 1.25rem;
+    font-weight: 400;
+    font-size: 1.4rem;
     margin: 0;
+}
+
+.work_info{
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+    margin-bottom: 0.9rem;
+}
+
+.work_info p{
+    font-size: 1.1rem;
+    font-weight: 300;
 }
 
 .more_info{
