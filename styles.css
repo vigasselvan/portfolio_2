@@ -331,14 +331,15 @@ body{
     }
 
     #mobile_Links{
-        position: relative;
+        position: fixed;
         top: 12vh;
         left: 0;
         right: 0; 
+        z-index: 999;
         background: rgba(15, 23, 42, 0.95);
         backdrop-filter: blur(10px);
         border-top: 1px solid #334155;
-        padding: 1rem;
+        padding: 1.5rem;
         border-radius: 0 0 1rem 1rem;
     }
 
@@ -346,12 +347,14 @@ body{
         line-height: 1.6rem;
         display: flex;
         flex-direction: column;
-        gap: 1vh;
+        gap: 2vh;
     }
 
      #mobile_Links ul a{
         text-decoration: none;
-        color: #e2e8f0;
+        color: rgb(148, 163, 184);
+        font-weight: 500;
+        transition: color 0.3s;
      }
 
     #mobile_Links ul a li:hover {
