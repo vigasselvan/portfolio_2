@@ -1,5 +1,8 @@
-# portfolio_2
-portfolio website containing information about me.
+# Portfolio website
+Portfolio website containing information about me.
 
-challenged faced:
-1. .git file corruption
+**Features** : Responsive, Simple UI/UX, Link to Live website, github repo and Easy to contact.
+
+**challenged faced**: .git file corruption and making Navbar responsive.
+
+***Live***: [Click me](https://vigasbs.site/)
