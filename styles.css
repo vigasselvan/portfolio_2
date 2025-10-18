@@ -105,14 +105,14 @@ body{
 .my_name{
     -webkit-text-fill-color: transparent;
     background: linear-gradient(135deg, rgb(226, 232, 240), rgb(14, 165, 233)) text;
-    font-size: 3rem;
+    font-size: 3.12rem;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;
 }
 
 .designation{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: rgb(148, 163, 184);
     margin-bottom: 1.5rem;
 }
@@ -129,6 +129,7 @@ body{
 
 .tech_intro{
     display: flex;
+    justify-content: center;
     gap: 1rem;
     margin-bottom: 4vh;
     flex-wrap: wrap;
@@ -147,6 +148,7 @@ body{
 
 .site_links{
     display: flex;
+    justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
     align-content: space-evenly;
@@ -508,9 +510,9 @@ body{
 
 .work_info{
     display: flex;
-    gap: 1rem;
+    gap: 1.15rem;
     align-items: baseline;
-    margin-bottom: 0.9rem;
+    margin-bottom: 0.4rem;
 }
 
 .work_info p{
