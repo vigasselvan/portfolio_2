@@ -524,6 +524,7 @@ body{
     display: flex;
     gap: 1rem;
     align-items: baseline;
+    flex-wrap: wrap;
     margin-bottom: 0.9rem;
 }
 
