@@ -1,5 +1,5 @@
 # Portfolio website
-Portfolio website containing information about me.
+Portfolio website containing information about my Technical knowledge.
 
 **Features** : Responsive, Simple UI/UX, Link to Live website, github repo and Easy to contact.
 
